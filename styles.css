@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+html, body, button{
+    font-family: 'Roboto', sans-serif;
+}
+
+html.home{
+    --bg-image: url('./assets/mountains-universe-1.png')
+}
+
+html.universo{
+    --bg-image: url('./assets/mountains-universe-2.png')
+}
+
+
+html.exploracao{
+    --bg-image: url('./assets/mountains-universe-3.png')
+}
+
+html.universo body,
+html.home body, 
+html.exploracao body{
+    background: var(--bg-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+html.home a#home,
+html.universo a#universo,
+html.exploracao a#exploracao{
+    color: white;
+    font-weight: bold;
+}
+
+header{
+    padding: 2.5rem 4.5rem;
+}
+
+nav, ul{
+    align-items: center;
+    gap: 2.625rem;
+}
+
+a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #C4C4CC;
+}
+
+li{
+    list-style: none;
+    transition: all .4s;
+}
+
+li:hover{
+    transform: scale(1.1);
+}
+
+main{
+    padding: 3.938rem 6.438rem;
+}
+
+button, a{
+    cursor: pointer;
+}
+
+/* home */
+
+#container-home{
+    text-align: center;
+    margin-top: 7rem;
+}
+
+h1{
+    color: #E1E1E6;
+    font-size: 3rem;
+    line-height: 125%;
+}
+
+#container-home a{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    
+    font-weight: bold;
+
+    background-color: transparent;
+    border: 0.125rem solid white;
+    border-radius: 0.313rem;
+
+    text-transform: uppercase;
+
+    padding: 0.75rem 2rem;
+
+    margin-top: 1.5rem;
+
+    color: white;
+
+    transition: background-color .8s;
+
+    display: inline-block;
+}
+
+#container-home a:hover{
+    background-color: #fff;
+    color: #02799D;
+}
+
+/* universo e universo */
+
+#container-universo, #container-exploracao{
+    width: 40.5rem;
+}
+
+#container-universo p, #container-exploracao p{
+    font-size: 1.125rem;
+    line-height: 160%;
+
+    color: #e1e1e6;
+
+    margin-top: 1rem;
+}
+
+
